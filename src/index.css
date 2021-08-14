@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.red {
+  color: indianred;
+}
+.green {
+  color: green;
+}
+a {
+  text-decoration: none !important;
+  color: white !important;
+}
+ul {
+  list-style: none;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.m-navbar {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(
+    45deg,
+    rgba(234, 81, 121, 1) 0%,
+    rgba(172, 54, 115, 1) 100%
+  );
+  height: 90px;
+  margin: 2px 2px 2px 2px;
+  border-radius: 10px;
+}
+.navbar {
+  background-color: gray;
+}
+.m-navbar ul {
+  display: flex;
+  font-weight: 700;
+  margin-top: 25px !important;
+  font-size: 20px;
+}
+.left-nav li {
+  margin-right: 25px;
+}
+.right-nav li {
+  margin-left: 25px;
+}
+.m-sidebar {
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #303456;
+  border-radius: 10px;
+  margin-left: 2px;
+}
+.sidebar-links {
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.sidebar-links.active {
+  background-color: #ea5179 !important;
+  border-radius: 15px;
+  margin: 5px 5px 5px 5px;
+  padding: 5px;
+}
+.c-btn {
+  color: #ffffff;
+  background: linear-gradient(
+    45deg,
+    rgba(234, 81, 121, 1) 0%,
+    rgba(172, 54, 115, 1) 100%
+  );
+}
+.form-errors {
+  color: red !important;
+}
+.m-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.m-selected {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 101;
+  color: white;
+  font-size: 50px;
+  visibility: hidden;
+}
+.m-selected.active {
+  visibility: visible;
+}
+.m-overlay.active {
+  z-index: 100;
+  background-color: black;
+  opacity: 0.7;
+}
